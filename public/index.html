@@ -6,35 +6,180 @@
   <title>MP2 Starter</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="./foundation6_lib/css/foundation.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Oswald' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/">Web Page</a></li>
-      </ul>
+  <section class="container" id="home">
+
+    <div id="nav-bar" class="fixed">
+      <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-topbar role="navigation">
+        <button id="menu-button" class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      <div class="top-bar" id="main-menu">
+       <div class="top-bar-left" id="left-bar">
+         <ul class="menu">
+           <li><a id="nav-button" href="#">Grant Young</a></li>
+         </ul>
+       </div>
+        <div class="top-bar-right" id="right-bar">
+          <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+            <li id="home-link"><a href="#home">Home</a></li>
+            <li id="about-link"><a href="#about">About</a></li>
+            <li id="experience-link"><a href="#experience">Experience</a></li>
+            <li id="contact-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </nav>
-	<div class="row text-center">
-		<h3>Hello. It's Me.</h3>
-	</div>
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
+
+    <div id="title">
+        <div class="title-text">
+          <h1>Grant Young</h1>
+        </div>
     </div>
   </section>
 
+  <section id="about" class="sections">
+    <div id="section-container">
+    	<div class="row text-center">
+    		<!-- <h3>About Me</h3> -->
+
+        <div class="row">
+          <div class="column medium-4">
+            <h1>Student</h1>
+            <p>I am currently in my third year as a student at University of Illinois at Urbana-Champaign, majoring in Computer Science. I plan on graduating in May of 2017 with my Bachelor's degree from the Engineering school.</p>
+          </div>
+
+          <div class="column medium-4">
+            <h1>Skills</h1>
+            <p><u>Proficient:</u> Python, C++, C, Java</p>
+            <p><u>Familiar:</u> HTML/CSS, Javascript, jQuery, Git</p>
+          </div>
+
+          <div class="column medium-4">
+            <h1>Hobbies</h1>
+            <p>I am an incredible athlete! I've been playing basketball, football, hockey, and soccer since I was in second grade. Since then I've also picked up golf, swimming, gymnastics, track, cross-country, water polo, actual polo, billiards, weightlifting, and underwater basket-weaving. I've been on the varsity team for all of these at every school I've gone to and I'm going to be competing in the next Olympics in all of these activities!</p>
+          </div>
+        </div>
+    	</div>
+
+      <div class="movie-container">
+        <h3>Movies</h3>
+        <div id="outside-text">
+          <p>Click the posters to get a summary and my thoughts on the movie!</p>
+        </div>
+        <div class="row">
+          <div class="column medium-4">
+            <img id="movie1" class="modal-button" data-toggle="movie1-modal" src="./../data/pics/mononoke1.jpg">
+          </div>
+
+          <div class="reveal" id="movie1-modal" data-reveal>
+            <div class="modal-content">
+              <h1>Princess Mononoke</h1>
+              <p><i>"On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime."</i></p>
+              <p>This is a movie that my dad showed me and my brother when we were kids that I did not really appreciate at the time. As I grew older and watched it again I began to understand its themes and motivations and it quickly found its place in my heart.</p>
+              <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="column medium-4">
+            <img id="movie2" class="modal-button" data-toggle="movie2-modal" src="./../data/pics/howl.jpg">            
+          </div>
+
+          <div class="reveal" id="movie2-modal" data-reveal>
+            <div class="modal-content">
+              <h1>Howl's Moving Castle</h1>
+              <p><i>"When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle."</i></p>
+              <p>This is also a movie that my dad showed me as a kid. I've always loved this steampunk/fantasy type setting that exists in this movie as well as the atmosphere that it creates. The soundtrack used in this film is also something that has been dear to me for a very long time and does a great job of enhancing the environment.</p>
+              <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="column medium-4">
+            <img id="movie3" class="modal-button" data-toggle="movie3-modal" src="./../data/pics/lotr.jpg">
+          </div>
+
+          <div class="reveal" id="movie3-modal" data-reveal>
+            <div class="modal-content">
+              <h1>Lord of the Rings</h1>
+              <p><i>"A meek Hobbit and eight companions set out on a journey to destroy the One Ring and the Dark Lord Sauron."</i></p>
+              <p>Every family has their movie series that they connect with. For some it's Star Wars, for others it's Harry Potter. My family has always been a fan of fantasy adventure so naturally we gravitated towards the Lord of the Rings trilogy. I've watched this trilogy well over 20 times in my life and still find as much enjoyment from it as I did as a kid. I remember always thinking that Legolas was the coolest character in the entire series because of his archery and natural suave. These movies are ones that I have the best memories of.</p>
+              <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="sections">
+		<div class="text-center">
+      <h3>Experience</h3>  
+      <div class="experience-carousel">
+        <div id="bofa">
+          <h1>Bank of America</h1>
+          <h2><i>Technology Development Intern</i></h2>
+          <p>This summer I will be joining Bank of America as a Technology Development Intern in Chicago, IL. </p>
+          <p>My project and team are yet to be determined but I am looking forward to working with an incredible group of people at a great company!</p>
+        </div>
+        <div id="state-farm">
+          <h1>State Farm</h1>
+          <h2><i>Systems Intern</i></h2>
+          <p>I am currently a part-time Systems Intern at State Farm in Research Park.</p> 
+          <p>I am working on an internal web platform designed to allow for communication and collaboration between employees for the creation and design of user submitted projects.</p>
+        </div>
+        <div id="hack-illinois">
+          <h1>HackIllinois</h1>
+          <h2><i>Staff Member</i></h2>
+          <p>This is my third year working with the HackIllinois team here at UIUC but the first year as a staff member.</p>
+          <p>I worked this year on the Operations Team in charge of the overall setup and operations of the event.</p>
+          <p>This year was the biggest year so far with over 1500 student participants!</p>
+        </div>
+      </div> 
+    </div> 
+  </section>
+
+  <section id="video">
+    <div class="video-content">
+      <video id="skyline-video" autoplay muted loop>
+        <source src="./../data/videos/skyline.mp4">
+      </video>
+    </div>
+  </section>
+
+  <footer class="sections" id="contact">
+    <div class="footer-content-outer">
+      <div class="footer-content-inner">
+        <a href="https://www.facebook.com/grant.young.9235" target="_blank">
+          <img src="./data/pics/facebook.svg" class="icon">
+        </a>
+        <a href="https://www.twitter.com/?lang=en" target="_blank">
+          <img src="./data/pics/twitter.svg" class="icon">
+        </a>
+        <a href="https://www.github.com/gpyoung9/" target="_blank">
+          <img src="./data/pics/github.svg" class="icon">
+        </a>
+        <a href="https://play.spotify.com/user/lemonism" target="_blank">
+          <img src="./data/pics/spotify.svg" class="icon">
+        </a>
+      </div>
+    </div>  
+  </footer>
   <!-- Scripts -->
   
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
@@ -43,6 +188,7 @@
   <script>
     $(document).foundation();
   </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

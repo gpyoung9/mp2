@@ -1,1 +1,24 @@
 // Insert your mixins
+@mixin text-shadow($color) {
+	text-shadow: -1px 0 $color, 0 1px $color, 1px 0 $color, 0 -1px $color;
+}
+
+@mixin padding-top-bottom($size) {
+	padding-top: $size;
+	padding-bottom: $size;
+}
+
+@mixin fixed-background() {
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-position: center center;
+  	background-size: cover;
+}
+
+@mixin gradient($color1, $color2) {
+	background: $color1;
+    background: -webkit-linear-gradient($color1, $color2);
+    background: -o-linear-gradient($color1, $color2);
+    background: -moz-linear-gradient($color1, $color2);
+    background: linear-gradient($color1, $color2);
+}

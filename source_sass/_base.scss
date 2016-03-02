@@ -1,1 +1,272 @@
 // Add any custom Sass & CSS here
+
+
+.container {
+	height: 1000px;
+	width: 100%;
+
+	background-image: url(./../data/pics/chicago-skyline.jpg);
+	@include fixed-background();
+	
+	#nav-bar {
+		position: fixed;
+		width: 100%;
+		z-index: 99990;
+		border-bottom: 2px solid $orange; 
+
+		.title-bar {
+			background: $navy;
+		}
+
+		.top-bar {
+			background: $navy;
+			transition: all 0.5s ease 0.1s;
+			z-index: 99990;
+			padding: 20px 0.9375rem 20px 0.9375rem;
+			width: 100%;
+
+			.title-bar {
+				float: right;
+			}
+
+			.top-bar-left ul{
+				margin-left: 40px;
+				background: none;
+			
+				li {
+					font-size: 16px;
+					text-transform: uppercase;
+					background-color: transparent;
+					a {
+						color: white;
+					
+					}
+				}
+			}
+
+			.top-bar-right ul{
+				margin-right: 40px;
+				background: none;
+				font-size: 16px;
+
+				li a:not(.button), li.active a:not(.button) {
+					background: none;
+					line-height: 30px;
+					padding: 0;
+					margin: 5px 0 0 0;
+					text-transform: uppercase;
+				}
+
+				li a:not(.button):hover {
+					background: none;
+					border-bottom: 2px solid $orange; 
+					margin: 0 0 0 0;
+				}
+
+				li.active a:not(.button) {
+					border-bottom: 2px solid $orange;
+					&:hover {
+						background: none;
+					}
+				}
+
+				li {
+					margin-left: 30px;
+					padding-left: 30px;
+					vertical-align: middle;
+
+					a {
+						display: inline;
+						border-bottom: 2px solid transparent;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	#title {
+		.title-text {
+			position: absolute;
+			display: table;
+			height: 100%;
+			width: 100%;
+
+			h1 {
+				color: white;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				font-size: 92px;
+				font-family: 'Oswald', sans-serif;
+				@include text-shadow(black);
+			}
+		}
+	}
+}
+
+#nav-bar.shrink {
+	z-index: 99990;
+	width: 100%;
+
+	.top-bar {
+		display: table;
+		@include padding-top-bottom(16px);
+		background-color: white;
+	}
+
+	.title-bar {
+		display: table;
+		@include padding-top-bottom(16px);
+		background-color: white;
+		color: $gray !important;
+		width: 100%;
+	}
+
+	.top-bar-left ul {
+		background-color: white;
+	}
+
+	li {
+
+		a {
+			color: $gray !important;
+			font-size: 12px;
+			display:inline;
+	  		vertical-align:middle;
+		}
+	}
+}
+
+body {
+	color: white;
+}
+
+#about {
+
+	#section-container {
+		@include gradient($navy, $blue);
+		text-align: center;
+		padding-top: 20px;
+
+		h1 {
+			color: $orange;
+			padding-top: 10px;
+			/*@include text-shadow(black);*/
+			font-size: 48px;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.movie-container {
+			color: black;
+			padding-bottom: 20px;
+
+			h3 {
+				color: $orange;
+				padding-top: 10px;
+				/*@include text-shadow(black);*/
+				font-size: 48px;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			#outside-text {
+				color: white;
+			}
+
+			#movie1 {
+				border-radius: 20px;
+			}
+
+			#movie2 {
+				border-radius: 20px;
+			}
+
+			#movie3 {
+				border-radius: 20px;
+			}
+
+			.reveal {
+				z-index: 99999;
+				border-style: solid;
+				border-color: $navy;
+				border-width: 4px;
+			}
+
+			/* #movie1-modal {
+				border: 
+			}
+			
+			#movie2-modal {
+				z-index: 99999;
+			}
+			
+			#movie3-modal {
+				z-index: 99999;
+			} */
+
+			 /* .modal-content {
+			 				color: white;
+			 				background-color: $navy;
+			 			}  */
+		}
+	}
+}
+
+#experience {
+	background-color: $orange;
+
+	h3 {
+		padding-top: 20px;
+		color: $navy;
+		font-size: 48px;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.experience-carousel {
+		margin: 0 auto;
+		width: 80%;
+
+		h1 {
+			font-size: 58px;
+			padding-top: 20px;
+			margin-bottom: 0;
+		}
+
+		h2 {
+			color: $gray;
+			font-size: 32px;
+		}
+	}
+}
+
+#video {
+	margin-bottom: 0;
+	background-color: $orange;
+
+	.video-content{
+		width: 100%;
+	}
+
+	#skyline-video {
+		width: 100%;
+	}
+}
+
+footer {
+
+	display: inline;
+	text-align: center;
+
+	.footer-content-outer {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: white;
+
+	}
+
+	.icon {
+		display: inline;
+		height: 60px;
+		width: 60px;
+	}
+}
